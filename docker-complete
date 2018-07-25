@@ -7,7 +7,7 @@
 
 _docker_names()
 {
-    printf "GET /containers/json HTTP/1.1\r\n\r\n" \
+    printf "GET /containers/json HTTP/1.0\r\n\r\n" \
         | sudo socat - unix-connect:/var/run/docker.sock \
         | tr -d '\r'  \
         | ( DOIT=0 ;  while read line 
