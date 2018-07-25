@@ -14,6 +14,14 @@ uses the API. Maybe that makes a difference?
 
 === installation ===
 
+For Amazon Linux, you need to install bash_completion first
+
+{{{
+yum --enablerepo=epel install bash-completion bash-completion-extras
+}}}
+
+* bash_completion
+
 You first need the following dependencies:
 
 * socat
@@ -23,12 +31,24 @@ You first need the following dependencies:
 apt-get install socat
 }}}
 
+** available in Amazon Linux with:
+
+{{{
+yum install socat
+}}}
+
 * jq
 ** the indispensible jq program
 ** available in ubuntu with:
 
 {{{
 apt-get install jq
+}}}
+
+** available in Amazon Linux with:
+
+{{{
+yum install jq
 }}}
 
 * GNU Sed
