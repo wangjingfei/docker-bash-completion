@@ -20,9 +20,7 @@ For Amazon Linux, you need to install bash_completion first
 yum --enablerepo=epel install bash-completion bash-completion-extras
 }}}
 
-* bash_completion
-
-You first need the following dependencies:
+You also need the following dependencies:
 
 * socat
 ** available in ubuntu with:
