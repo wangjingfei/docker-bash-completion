@@ -14,7 +14,7 @@ _docker_names()
         do 
             if [ "$DOIT" == "1" ] ; then echo $line ; fi
             if [ "$line" == "" ] ; then DOIT="1" ; fi
-        done  ; echo "]" // bizarrely socat drops the end "]"??
+        done  ;
     ) \
         | jq -r 'map(.Names | .[0]) | .[]' 2> /dev/null \
         | sed -rne 's|/(.*)|\1|p'
